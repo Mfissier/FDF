@@ -78,7 +78,6 @@ void				*ft_memchr(const void *s1, int c, size_t n);
 void				*ft_memalloc(size_t size);
 char				*ft_htoa(unsigned long n);
 char				*ft_itoa_base(unsigned long long n, const char *s1);
-char				*ft_uitoa_base(uintmax_t n, const char *s1);
 char				*ft_strdup(const char *s1);
 char				*ft_strcpy(char *dst, const char *src);
 char				*ft_strncpy(char *dst, const char *src, size_t n);

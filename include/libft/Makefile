@@ -89,7 +89,6 @@ SRC		= ft_putchar_fd \
 		  ft_lstnew \
 		  ft_lstdelone \
 		  ft_lstdel \
-		  ft_uitoa_base
 
 .SILENT:
 
