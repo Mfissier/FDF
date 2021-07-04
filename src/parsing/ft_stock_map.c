@@ -21,10 +21,8 @@ void ft_stock_map(t_fdf *fdf, char *file)
     i = 0;
     while (get_next_line(fd, &line))
     {
-        ft_stock_map2d(fdf->map2d[i], line);
-        i++;
+        ft_stock_map2d(fdf->map2d[i++], line);
         free(line);
     }
-//
     close(fd);
 }
