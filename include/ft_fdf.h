@@ -43,41 +43,29 @@ typedef struct s_fdf
 //UTILS
 char			**ft_strsplit(char const *str, char c); //✅
 int		        ft_atoi(const char *s);                 //✅
-//-----------------------------------------
+void	        ft_putstr_fd(char const *s, int fd);    //✅
+size_t          ft_strlen(const char *s1);              //✅
+char	        *ft_strdup(const char *s1); //✅
+char	        *ft_strchr(const char *str, int c);//✅
+size_t	        ft_strlen(const char *s1);              //✅
 
 // GNL ----------
-int		        get_next_line(int fd, char **line);
-void	        ft_memdel(void **ap);
+int		        get_next_line(int fd, char **line);     //✅
+void	        ft_memdel(void **ap);                   //✅
+void            *ft_memset(void *b, int c, size_t len); //✅
+void	        ft_strdel(char **as);                   //✅
+char	        *ft_strsub(char const *s, unsigned int start, size_t len);  //✅
+char            *ft_strnew(size_t size);                //✅
+void	        ft_bzero(void *s, int n);               //✅
+char	        *ft_strjoin(char const *s1, char const *s2); //✅
+char	        *ft_substr(char const *s, unsigned int str, size_t len); //✅
 
 int		        ft_end(char **line, char **save, int fd, int bytes);
 int		        ft_line(char **line, char **save, int fd, int i);
 int		        ft_next_step(char **line, char **save, int fd, int bytes);
-size_t	        ft_strlen(const char *s1);
 char	        *ft_malloc(size_t size);
-char	        *ft_strjoin(char const *s1, char const *s2);
-char	        *ft_substr(char const *s, unsigned int str, size_t len);
-char	        *ft_strdup(const char *s1);
-char	        *ft_strchr(const char *str, int c);
-void            *ft_memset(void *b, int c, size_t len);
-void	        ft_bzero(void *s, int n);
-void	        ft_read(t_get *get, char **rest, char **line);
-int		        check_rest(t_get *get, char **rest, char **line);
-size_t          ft_strlen(const char *s1);
-char	        *ft_strsub(char const *s, unsigned int start, size_t len);
-char            *ft_strnew(size_t size);
-void	        ft_strdel(char **as);
-void	        manage_rest(char **rest, size_t i);
-void	        manage_line(int is_join, char **line, char **rest, size_t i);
-void	        ft_putstr_fd(char const *s, int fd);
-// LOGICIEL
 
-int             stock_width(char *file); // not ok
-
-static int		words(char const *str, char c); // not ok
-static char		**memory_giver(char const *str, char c); // not ok
-
-
-// PARSING :
+// PARSING : =
 void            ft_parsing_argv(int argc, char *file);     //✅
 void	        ft_error(char *msg);                    //✅
 void            ft_stock_map(t_fdf *fdf, char *file);   //✅ 
@@ -86,6 +74,7 @@ int             ft_stock_width(char *file, t_fdf *fdf);             //✅
 int		        ft_wdcounter(char *str, char c);  //✅
 void            ft_stock_map2d(int *map2d, char *line);    //✅
 void            ft_free_tab(t_fdf *fdf, int height);    //✅
+// PARSING : =
 
 // DRAW ----------------------------------------
 float   ft_max(float a, float b);

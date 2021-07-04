@@ -674,7 +674,7 @@ char	*ft_strdup(const char *s1)
 	return (copy);
 }
 */
-
+/*
 char	*ft_strchr(const char *str, int c)
 {
 	if (c == 0)
@@ -691,6 +691,7 @@ char	*ft_strchr(const char *str, int c)
 	}
 	return (0);
 }
+*/
 /*
 void	ft_error(char *msg)
 {
